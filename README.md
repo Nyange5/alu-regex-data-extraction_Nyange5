@@ -22,6 +22,7 @@ alu-regex-data-extraction/
 ## How to run it
 
 ```bash
+cd alu-regex-data-extraction_Nyange5
 cd src
 python3 main.py
 ```
