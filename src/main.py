@@ -6,9 +6,11 @@ import json
 with open("../input/raw-text.txt", "r") as file:
     raw_text = file.read()
 
+
 # Safety check
 if "<script>" in raw_text or "DROP TABLE" in raw_text:
     print("\nSecurity Alert: Unsafe content detected")
+
 
 # Patterns
 
@@ -24,16 +26,23 @@ phone_number_regex = r'\+2507[2389][0-9]{7}'
 # 4. Credit card pattern
 credit_card_regex = r'\b(?:\d{4}[- ]?){3}\d{4}\b'
 
+
 # Hide credit card number
 correct_cards = []
 for card in re.findall(credit_card_regex, raw_text):
     last_four = card.replace(" ", "-")[-4:]  # This grabs the last 4 digits
     correct_cards.append("****-****-****-" + last_four)
 
+
 # Extraction of accurate data
+
+# find all correct ALU email addresses in the raw text
 correct_email_address = re.findall(email_address_regex, raw_text)
+# find all timestamps
 correct_time = re.findall(time_regex, raw_text)
+# find all Rwandan phone numbers
 correct_number = re.findall(phone_number_regex, raw_text)
+
 
 # Printing the results
 
@@ -53,6 +62,7 @@ print("\nValid Credit cards:")
 for card in correct_cards:
     print(" -", card)
 
+
 # Saving everything to a json file
 output = open("../output/sample-output.json", "w", encoding="utf-8")
 json.dump({
@@ -62,5 +72,6 @@ json.dump({
     "credit_cards": correct_cards
 }, output, indent=4)
 output.close()
+
 
 print("\nResults saved to output/sample-output.json")
