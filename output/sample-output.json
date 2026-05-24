@@ -1,0 +1,45 @@
+{
+    "emails": [
+        "james.okonkwo@alumni.alueducation.com",
+        "amara.diallo@alueducation.com",
+        "team@si.alueducation.com",
+        "kevin.mutua@alueducation.com",
+        "ops@alueducation.com",
+        "fatima.nkosi@alumni.alueducation.com",
+        "registrar@alueducation.com",
+        "d.mensah@si.alueducation.com",
+        "grace.uwimana@alueducation.com",
+        "support@alueducation.com",
+        "e.habimana@alumni.alueducation.com",
+        "finance@alueducation.com",
+        "admin@alueducation.com"
+    ],
+    "phone_numbers": [
+        "+250781234789",
+        "+250721234567",
+        "+250731234567",
+        "+250781234567",
+        "+250789112233",
+        "+250783334556"
+    ],
+    "times": [
+        "14:35:00",
+        "09:15:22",
+        "17:00:00",
+        "12:10:33",
+        "23:45:10",
+        "16:30:00",
+        "08:44:01",
+        "09:01:17",
+        "11:30:00",
+        "13:45:22",
+        "16:00:05"
+    ],
+    "credit_cards": [
+        "****-****-****-1234",
+        "****-****-****-0004",
+        "****-****-****-6666",
+        "****-****-****-1881",
+        "****-****-****-5100"
+    ]
+}
